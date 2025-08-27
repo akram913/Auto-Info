@@ -7,7 +7,7 @@ import requests
 from datetime import datetime
 
 # ---------- KONFIG ----------
-FEED_URL = os.getenv("FEED_URL", "https://www.disnakerja.com/feed/")
+FEED_URL = os.getenv("FEED_URL") or "https://www.disnakerja.com/feed/"
 SEEN_FILE = os.getenv("SEEN_FILE", "seen_feed.json")
 BOT_TOKEN = os.getenv("BOT_TOKEN")   # wajib: isi di GitHub Secrets
 CHAT_ID   = os.getenv("CHAT_ID")     # wajib: isi di GitHub Secrets
